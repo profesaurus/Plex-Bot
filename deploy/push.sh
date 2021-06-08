@@ -2,7 +2,7 @@
 
 VERSION=$(python PlexBot/__version__.py)
 
-docker push "jarulsamy/plex-bot:$VERSION"
+docker push "profesaurus/plex-bot:$VERSION"
 
 if [ $? -eq 0 ]
 then
