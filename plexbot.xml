@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>plexbot</Name>
-  <Repository>profesaurus/plex-bot</Repository>
+  <Repository>profesaurus/plexbot:dev</Repository>
   <Registry>https://hub.docker.com/r/profesaurus/plexbot/</Registry>
   <Network>bridge</Network>
   <MyIP/>
