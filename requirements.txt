@@ -1,5 +1,5 @@
-discord.py==1.4.1
-PlexAPI==4.0.0
+discord.py==1.7.2
+PlexAPI==4.6.0
 fuzzywuzzy==0.18.0
 pynacl==1.4.0
 ffmpeg==1.4
