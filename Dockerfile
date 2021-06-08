@@ -1,6 +1,6 @@
 FROM python:3.8-slim
 
-LABEL maintainer="Joshua Arulsamy <joshua.gf.arul@gmail.com>"
+LABEL maintainer="Profesaurus <6362518+profesaurus@users.noreply.github.com>"
 
 # Install ffmpeg
 RUN apt-get -y update && \
