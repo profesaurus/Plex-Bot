@@ -39,7 +39,7 @@
   </Data>
   <Environment>
     <Variable>
-      <Value></Value>
+      <Value>America/Los_Angeles</Value>
       <Name>TZ</Name>
       <Mode/>
     </Variable>
@@ -56,7 +56,7 @@
   </Environment>
   <Labels/>
   <Config Name="Config" Target="/config" Default="" Mode="ro" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/plex-bot/config</Config>
-  <Config Name="Host Key 1" Target="TZ" Default="" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Host Key 1" Target="TZ" Default="" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">America/Los_Angeles</Config>
   <Config Name="Host Key 2" Target="PUID" Default="" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
   <Config Name="Host Key 3" Target="PGID" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
   <Config Name="Host Path 2" Target="/src" Default="" Mode="rw" Description="Container Path: /src" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/plex-bot/src</Config>
