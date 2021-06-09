@@ -1,12 +1,12 @@
 version: "3"
 services:
   plex-bot:
-    container_name: "PlexBot"
+    container_name: "plex-bot"
     build: .
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Denver
+      - TZ=America/Los_Angeles
     # Required dir for configuration files
     volumes:
       - "./config:/config:ro"
