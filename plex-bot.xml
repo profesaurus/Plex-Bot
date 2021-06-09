@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>plex-bot</Name>
+  <Repository>profesaurus/plex-bot:dev</Repository>
+  <Registry>https://hub.docker.com/r/profesaurus/plex-bot/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/profesaurus/plex-bot/</Support>
+  <Project/>
+  <Overview>Python-based Plex music bot for Discord.</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1623194643</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Python-based Plex music bot for Discord.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/plex-bot/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/plex-bot/src</HostDir>
+      <ContainerDir>/src</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>TZ</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Config" Target="/config" Default="" Mode="ro" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/plex-bot/config</Config>
+  <Config Name="Host Key 1" Target="TZ" Default="" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">TZ</Config>
+  <Config Name="Host Key 2" Target="PUID" Default="" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+  <Config Name="Host Key 3" Target="PGID" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+  <Config Name="Host Path 2" Target="/src" Default="" Mode="rw" Description="Container Path: /src" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/plex-bot/src</Config>
+</Container>
